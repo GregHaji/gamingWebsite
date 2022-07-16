@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+:root{
+    --pink: #ef6a7a;
+    --blue: #364557;
+    --box-shadow: #181e22;
+    --black:#333;
+    --white:#fff;
+    --bg-color:#eee;
+    --dark-bg:rgba(0,0,0,.7);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --border:.1rem solid #999;
+
+}
+*{
+    font-family: 'Bangers', cursive;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+}
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(images/home1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+.home .homeContent{
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding: 4rem;
+}
+.home .homeContent h2{
+    font-size: 8rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+    line-height: 7rem;
+    color: var(--white);
+    text-shadow: var(--box-shadow);
+
+}
+.home .homeContent p{
+    font-size: 1.8rem;
+    line-height: 2;
+    margin-bottom: 2rem;
+    color: var(--white);
+}
+.home .homeContent .home-btn{
+    height: 3rem;
+}
+.home .homeContent .home-btn button{
+    font-size: 1.8rem;
+    background-color: var(--white);
+    color: var(--black);
+    border-radius: .7rem;
+    padding: .7rem 2.4rem;
+    cursor: pointer;
+}
+.home .homeContent .home-btn button:hover{
+    font-size: 2rem;
+}
+
+.form-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:50px;
+    padding-bottom: 60px;
+    background: url("images/login.png");
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.form-container form{
+    padding:20px;
+    border-radius: 0px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    background: #fff;
+    text-align: left;
+    width: 500px;
+    margin: 10px;
+
+}
+.form-container form h3{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color:#333;
+}
+
+.form-container form input,
+.form-container form select{
+    width: 100%;
+    padding:10px 15px;
+    font-size: 17px;
+    margin:20px 0;
+    background: #eee;
+    border-radius: 5px;
+
+}
+
+.form-container form .error-msg{
+    margin:10px 0;
+    display: block;
+    background: crimson;
+    color:#fff;
+    border-radius: 5px;
+    font-size: 20px;
+    padding:10px;
+}
+
+.button-64 {
+    align-items: center;
+    background-image: linear-gradient(144deg, #7fe0fe, #b99ee6 50%, #9d73cf);
+    border: 0;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 100px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+
+
+
+.button-64:active,
+.button-64:hover {
+    outline: 0;
+}
+
+.button-64 span {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+}
+
+.button-64:hover span {
+    background: none;
+    color: black;
+}
+
+.header{
+    background: #23395d;
+    position: sticky;
+    top:0; left:0;
+    z-index: 1000;
+
+}
+
+.header .flex{
+    display: flex;
+    align-items: center;
+    padding:0.5rem 2rem;
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+
+.header .flex .logo{
+    margin-right: auto;
+    font-size: 35px;
+    color: #ffffff;
+}
+
+.header .flex .navbar a{
+    margin-left: 3rem;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.header .flex .navbar a:hover{
+    color: #152239;
+    padding-bottom: .4rem;
+}
+.header .fa-user a{
+    color: #152239;
+}
+.header .fa-user a:hover{
+    color: #152239;
+    padding-bottom: .4rem;
+}
+
+.container{
+    background-color: #333333;
+}
+.products h1{
+    color: var(--white);
+    text-align: left;
+    font-size: 30px;
+    background-color: var(--blue);
+    padding: 20px;
+}
+
+
+
+.products .box-container{
+    display: flex;
+    grid-template-columns: repeat(auto-fit, 10rem);
+    gap:1.5rem;
+    justify-content: center;
+    margin: 10px;
+    background-color: #333333;
+
+}
+
+.products .box-container .box{
+    text-align: center;
+    padding:2rem;
+    box-shadow: var(--box-shadow);
+    border:var(--border);
+    border-radius: .5rem;
+    background-color: white;
+}
+
+.products .box-container .box img{
+    height: 10rem;
+    border-radius: 3rem;
+}
+
+.products .box-container .box h3{
+    margin:1rem 0;
+    font-size: 15px;
+    color:var(--black);
+}
+
+.products .box-container .box .price{
+    font-size: 15px;
+    color:var(--black);
+}
+
+#menu-btn{
+    margin-left: 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    color:var(--white);
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .button-64 {
+        font-size: 24px;
+        min-width: 196px;
+    }
+}
+
+/* media queries  */
+@media (max-width:1200px){
+
+    .shopping-cart{
+        overflow-x: scroll;
+    }
+
+    .shopping-cart table{
+        width: 120rem;
+    }
+
+    .shopping-cart .heading{
+        text-align: left;
+    }
+
+    .shopping-cart .checkout-btn{
+        text-align: left;
+    }
+
+}
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+}
+
+@media (max-width:768px){
+
+    #menu-btn{
+        display: inline-block;
+        transition: .2s linear;
+    }
+
+    #menu-btn.fa-times{
+        transform: rotate(180deg);
+    }
+
+    .header .flex .navbar{
+        position: absolute;
+        top:99%; left:0; right:0;
+        background-color: var(--baige);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: .2s linear;
+    }
+
+    .header .flex .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .header .flex .navbar a{
+        margin:2rem;
+        display: block;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .display-product-table{
+        overflow-x: scroll;
+    }
+
+    .display-product-table table{
+        width: 90rem;
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .heading{
+        font-size: 3rem;
+    }
+
+    .products .box-container{
+        grid-template-columns: 1fr;
+    }
+
+}
